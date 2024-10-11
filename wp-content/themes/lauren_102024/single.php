@@ -3,7 +3,7 @@
  * The Template for displaying all single posts.
  *
  * @package WordPress
- * @subpackage Lauren 2024
+ * @subpackage Lauren 2024 Test
  */
 get_header(); ?>
 <header class="single__title scene scene--fadein">
