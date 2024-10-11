@@ -23,7 +23,7 @@ update_option( 'home', 'https://laurengibbons.com' );
  * @link http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage Lauren
+ * @subpackage Lauren 2024
  * @since theme 1.0
  */
 
@@ -46,11 +46,6 @@ function theme_setup() {
 
 	// Enable support for Post Thumbnails, and declare two sizes.
 	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in two locations.
-	register_nav_menus( array(
-		'primary'   => __( 'Top primary menu', 'twentyfourteen' ),
-	) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -94,7 +89,7 @@ add_action('wp_enqueue_scripts', 'update_jquery');
 
 //Enqueue Theme Styles & Scripts
 function theme_scripts() {
-	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/style.css', array(), '20240806' );
+	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/style.css', array(), '20240807' );
 	wp_enqueue_script( 'anime', get_template_directory_uri() . '/js/anime.min.js', array( 'jquery' ), '20170605', true );
 	wp_enqueue_script( 'smoothstate', get_template_directory_uri() . '/js/jquery.smoothState.min.js', array( 'jquery' ), '20170605', true );
 	wp_enqueue_script( 'player', get_template_directory_uri() . '/js/player.min.js', array( 'jquery' ), '20170605', true );
