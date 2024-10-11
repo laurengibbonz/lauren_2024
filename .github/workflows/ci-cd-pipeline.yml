@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./  # Specify the local directory to upload
-          server-dir: /laurengibbons.com/public_html  # Server directory
+          server-dir: /laurengibbons.com/public_html/  # Server directory
