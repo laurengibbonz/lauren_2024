@@ -367,7 +367,7 @@ iframe {
 
 #video {
   display: block;
-  opacity: 0;
+  /* opacity: 0; */
   height: auto;
   width: 100%;
   padding: 3em 0 10em;
@@ -517,6 +517,7 @@ iframe {
     clear: both;
     display: table; }
   .scenes .scene {
+    opacity: 0;
     animation-duration: 0.3s;
     transition-timing-function: ease-in;
     animation-fill-mode: both; }
