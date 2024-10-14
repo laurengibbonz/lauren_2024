@@ -13,8 +13,9 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android"); ?>
 <div class="scenes" id="content">
 
 <header id="home__header" class="scene scene--fadein">
-<h1><?php bloginfo('name'); ?></h1>
-<h3><?php bloginfo('description'); ?></h3>
+<!-- <h1><?php bloginfo('name'); ?></h1> -->
+<!-- <h3><?php bloginfo('description'); ?></h3> -->
+<h3 class="headline">Lauren Gibbons Frank is a designer, teacher, and coder sculpting data-driven experiences that inspire.</h3>
 </header>
 
 <?php 
