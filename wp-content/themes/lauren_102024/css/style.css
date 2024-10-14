@@ -332,22 +332,33 @@ iframe {
 
 #home__header {
   padding: 1em 0 3em;
-  text-align: left; }
+  text-align: left;
+width: 70% }
+
   #home__header h1 {
 	font-weight: 500;
     margin-bottom: .3em;
     text-align: left;
-	text-transform: none;}
+	text-transform: none; }
+
   #home__header h3 {
     font-weight: 300;
 	letter-spacing: 0;
 	  line-height: 130%;
 	text-transform: none;
-	font-size: 20px;}
+	font-size: 42px;}
+
+
   #home__header .staticText {
     display: block;
     margin-bottom: 0;
     line-height: 90%; }
+
+#video {
+  display: block;
+  height: auto;
+  width: 100%;
+}
 
 .changeText {
   display: block; }

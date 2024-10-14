@@ -18,6 +18,14 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android"); ?>
 <h3 class="headline">Lauren Gibbons Frank is a designer, teacher, and coder sculpting data-driven experiences that inspire.</h3>
 </header>
 
+<div id="video">
+<video autoplay loop>
+  <source src="https://laurengibbons.com/wp-content/uploads/2024/08/GibbonsFrank.mp4" type="video/mp4">
+  <source src="https://laurengibbons.com/wp-content/uploads/2024/08/GibbonsFrank.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+
 <?php 
 	$args = 
 	array(
