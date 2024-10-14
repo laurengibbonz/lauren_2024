@@ -184,7 +184,11 @@ h6 {
 
 .margin {
   display: block;
-  margin: 0 0 5%;
+  margin: 5em auto;
+}
+
+.width {
+  width: 80%;
 }
 
 .wrapper {
@@ -590,7 +594,7 @@ iframe {
 
 .single__content .center {
   margin: 0 auto;
-  width: 70%; }
+  width: 90%; }
   .single__content .center p {
     text-align: left; }
 
