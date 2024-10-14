@@ -110,9 +110,9 @@ body {
 
 p, a {
   color: #191919;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 160%;
+  line-height: 180%;
   text-align: left;
   margin: 0 auto 1em; 
 }
@@ -640,6 +640,10 @@ iframe {
     content: '';
     display: block; }
 
+.m-aside {
+  width: 70%;
+}
+
 .overlay, .overlay-navigation {
   display: block;
   position: fixed;
@@ -815,6 +819,7 @@ footer {
     footer .social a svg .ico {
       fill: #191919; }
 
+    
 /* Keyframes */
 @keyframes fadeIn {
   0% {
