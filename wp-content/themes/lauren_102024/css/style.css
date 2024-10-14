@@ -52,6 +52,10 @@ blockquote, q {
 a img {
   border: 0; }
 
+strong {
+  font-weight: 500;
+}
+
 figure img {
   max-width: 100%; }
 
@@ -162,7 +166,9 @@ h3 {
 
 h4 {
   font-size: 22px;
-  font-weight: 300; }
+  font-weight: 300; 
+  margin: 0 0 .5em;
+}
 
 h4.caption { 
   font-size: 18px;
@@ -641,7 +647,7 @@ iframe {
     display: block; }
 
 .m-aside {
-  width: 70%;
+  width: 65%;
 }
 
 .overlay, .overlay-navigation {
@@ -844,6 +850,10 @@ footer {
     transform: none; } }
 
 @media only screen and (max-width: 490px) {
+
+  .m-aside {
+    width: 100%;
+  }
   .wrapper {
     padding-left: 3%;
     padding-right: 3%; }

@@ -15,7 +15,7 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android"); ?>
 <header id="home__header" class="scene scene--fadein">
 <!-- <h1><?php bloginfo('name'); ?></h1> -->
 <!-- <h3><?php bloginfo('description'); ?></h3> -->
-<h3 class="headline"><strong>Lauren Gibbons Frank</strong> is a designer, teacher, and coder sculpting<br/> data-driven experiences that inspire.</h3>
+<h3 class="headline"><strong>Lauren Gibbons Frank</strong> is a designer,<br/> teacher, and coder sculpting<br/> data-driven experiences that inspire.</h3>
 </header>
 
 <div id="video" class="section scene">
@@ -54,23 +54,7 @@ if ( $query->have_posts() ) :
 endif; ?>
 
 </div>
-<div class="overlay-navigation">
-	<div class="overlay__text">
-<?php $args = array(
-	'post_type' => 'work',
-	'post_status' => 'publish',
-	'posts_per_page' => 6,
-	'orderby' => 'date',
-	'order' => 'DESC'
-	);
-$query = new WP_Query( $args );
-if ( $query->have_posts() ) :
-	while ( $query->have_posts() ) :
-	$query->the_post();
-	echo '<h3><a href="'.get_the_permalink($post->ID).'">'.get_the_title().'</a></h3>';
-	endwhile;
-endif; ?>
-	<h3><a href="mailto:laurengibbonz@gmail.com" target="_blank">Contact</a></h3>
-	</div>
-</div>
+
+<?php get_template_part('overlay'); ?>
+
 <?php get_footer(); ?>
