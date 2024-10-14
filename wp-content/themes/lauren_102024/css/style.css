@@ -333,6 +333,7 @@ iframe {
 #home__header {
   /* padding: 1em 0 3em;  */
   display: table;
+  height: 50vh;
   text-align: left;
   width: 70% 
 }
@@ -353,6 +354,10 @@ iframe {
 	font-size: 42px;
 }
 
+#home__header h3 strong {
+  font-weight: 500;
+}
+
 
   #home__header .staticText {
     display: block;
@@ -363,6 +368,7 @@ iframe {
   display: block;
   height: auto;
   width: 100%;
+  padding: 3em 0;
 }
 
 #video video {
