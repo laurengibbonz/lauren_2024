@@ -47,7 +47,7 @@
 <header id="header" class="site-header wrapper" role="banner">
 	<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
 		<div class="logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">{L}</a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">{LGF}</a>
 		</div>
 <!-- 		<?php wp_nav_menu( array('menu' => 'Navigation' )); ?> -->
 		<button class="nav-trigger">
