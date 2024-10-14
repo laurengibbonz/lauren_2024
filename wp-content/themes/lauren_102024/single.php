@@ -122,9 +122,10 @@ get_header(); ?>
     echo '</div>';
     endif; 
     endwhile; 
-} else{
+} else {
     echo get_the_password_form();
 } ?>
+
 </div><!-- .single__images -->
 </div><!-- #content -->
 
@@ -136,23 +137,6 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="overlay-navigation">
-	<div class="overlay__text">
-<?php $args = array(
-	'post_type' => 'work',
-	'post_status' => 'publish',
-	'posts_per_page' => 6,
-	'orderby' => 'date',
-	'order' => 'DESC'
-	);
-$query = new WP_Query( $args );
-if ( $query->have_posts() ) :
-	while ( $query->have_posts() ) :
-	$query->the_post();
-	echo '<h3><a href="'.get_the_permalink($post->ID).'">'.get_the_title().'</a></h3>';
-	endwhile;
-endif; ?>
-	<h3><a href="mailto:laurengibbonz@gmail.com" target="_blank">Contact</a></h3>
-	</div>
-</div>
+<?php get_template_part('overlay'); ?>
+
 <?php get_footer(); ?>

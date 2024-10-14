@@ -14,7 +14,7 @@ if ( $query->have_posts() ) :
 	echo '<h3><a href="'.get_the_permalink($post->ID).'">'.get_the_title().'</a></h3>';
 	endwhile;
 endif; ?>
-	<?php echo '<h3><a href="'.get_the_permalink(2).'">'.get_the_title(2).'</a></h3>' ?>;
+	<?php echo '<h3><a href="'.get_the_permalink(2).'">'.get_the_title(2).'</a></h3>' ?>
     <h3><a href="mailto:laurengibbonsfrank@gmail.com" target="_blank">Contact</a></h3>
 	</div>
 </div>

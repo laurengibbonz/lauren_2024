@@ -265,7 +265,7 @@ iframe {
       font-size: 20px;
       letter-spacing: 1px; }
       .site-header .logo a:hover {
-        color: #3f4de1; }
+        color: #4087F6; }
   .site-header .menu {
     float: right;
     padding-top: .5em;
@@ -732,7 +732,7 @@ iframe {
     font-weight: 300;
     margin-bottom: 1em; }
   .overlay__text a:hover {
-    color: #3f4de1; }
+    color: #4087F6; }
   .overlay__text.reveal h3 {
     opacity: 1;
     -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);

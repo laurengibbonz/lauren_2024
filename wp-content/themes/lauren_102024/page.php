@@ -37,4 +37,5 @@ get_header(); ?>
 
 </div><!-- #content -->
 
+<?php get_template_part('overlay'); ?>
 <?php get_footer();
