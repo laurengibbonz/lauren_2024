@@ -139,16 +139,18 @@ $('.close, .overlay').on('click', function(){
 });
 
 
-let section = document.createElement('section');
+let section = document.querySelectorAll('.section');
 
 function inView (el) {
+	console.log('finding');
   var sb = section.getBoundingClientRect();
   var eb = el.getBoundingClientRect();
   return !((eb.top + eb.height < 0) || (eb.top > sb.height));
 }
 
 function updateInView() {
-  for (x of document.querySelectorAll('section')) {
+	console.log('test');
+  for (x of document.querySelectorAll('.section')) {
     if (inView(x)) x.classList.add('scene--fadeinup')
     // else x.classList.remove('inview');
   }

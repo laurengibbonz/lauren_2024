@@ -93,7 +93,7 @@ function theme_scripts() {
 	wp_enqueue_script( 'anime', get_template_directory_uri() . '/js/anime.min.js', array( 'jquery' ), '20170605', true );
 	wp_enqueue_script( 'smoothstate', get_template_directory_uri() . '/js/jquery.smoothState.min.js', array( 'jquery' ), '20170605', true );
 	wp_enqueue_script( 'player', get_template_directory_uri() . '/js/player.min.js', array( 'jquery' ), '20170605', true );
-	wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/js/theme.js', array( 'jquery' ), '20240809', true );
+	wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/js/theme.js', array( 'jquery' ), '20240810', true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 

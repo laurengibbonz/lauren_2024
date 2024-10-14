@@ -240,7 +240,8 @@ iframe {
 }
 */
 .home .site-header {
-  display: none; }
+  /* display: none;  */
+}
 
 .site-header {
   padding-top: 1em;
