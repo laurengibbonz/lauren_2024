@@ -367,6 +367,7 @@ iframe {
 
 #video {
   display: block;
+  opacity: 0;
   height: auto;
   width: 100%;
   padding: 3em 0 10em;

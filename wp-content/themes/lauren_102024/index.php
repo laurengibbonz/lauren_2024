@@ -39,8 +39,8 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android"); ?>
 		 
 $query = new WP_Query($args);
 if ( $query->have_posts() ) :
-	echo '<div class="section scene scene--fadeinup">';
-	echo '<h3>Selected Work</h3>';
+	echo '<div class="section scene">';
+	// echo '<h3>Selected Work</h3>';
 	while ( $query->have_posts() ) :
 		$query->the_post();
 		echo '<div class="item">';
