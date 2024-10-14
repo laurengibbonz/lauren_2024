@@ -40,6 +40,7 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android"); ?>
 $query = new WP_Query($args);
 if ( $query->have_posts() ) :
 	echo '<div class="section scene scene--fadeinup">';
+	echo '<h3>Selected Work</h3>'
 	while ( $query->have_posts() ) :
 		$query->the_post();
 		echo '<div class="item">';
@@ -52,5 +53,24 @@ if ( $query->have_posts() ) :
 	wp_reset_postdata();
 endif; ?>
 
+</div>
+<div class="overlay-navigation">
+	<div class="overlay__text">
+<?php $args = array(
+	'post_type' => 'work',
+	'post_status' => 'publish',
+	'posts_per_page' => 6,
+	'orderby' => 'date',
+	'order' => 'DESC'
+	);
+$query = new WP_Query( $args );
+if ( $query->have_posts() ) :
+	while ( $query->have_posts() ) :
+	$query->the_post();
+	echo '<h3><a href="'.get_the_permalink($post->ID).'">'.get_the_title().'</a></h3>';
+	endwhile;
+endif; ?>
+	<h3><a href="mailto:laurengibbonz@gmail.com" target="_blank">Contact</a></h3>
+	</div>
 </div>
 <?php get_footer(); ?>

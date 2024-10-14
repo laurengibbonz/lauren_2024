@@ -139,7 +139,7 @@ $('.close, .overlay').on('click', function(){
 });
 
 
-let section = document.querySelectorAll('body');
+let section = document.getElementById('main');
 
 function inView (el) {
 	console.log('finding');
