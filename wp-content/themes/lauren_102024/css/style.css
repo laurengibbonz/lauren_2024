@@ -331,22 +331,27 @@ iframe {
   font-weight: 500; }
 
 #home__header {
-  padding: 1em 0 3em;
+  /* padding: 1em 0 3em;  */
+  display: table;
   text-align: left;
-width: 70% }
+  width: 70% 
+}
 
   #home__header h1 {
 	font-weight: 500;
-    margin-bottom: .3em;
-    text-align: left;
+  margin-bottom: .3em;
+  text-align: left;
 	text-transform: none; }
 
   #home__header h3 {
+    display: table-cell;
+    vertical-align: middle;
     font-weight: 300;
 	letter-spacing: 0;
 	  line-height: 130%;
 	text-transform: none;
-	font-size: 42px;}
+	font-size: 42px;
+}
 
 
   #home__header .staticText {
@@ -357,6 +362,10 @@ width: 70% }
 #video {
   display: block;
   height: auto;
+  width: 100%;
+}
+
+#video video {
   width: 100%;
 }
 
