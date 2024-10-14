@@ -112,3 +112,9 @@ add_image_size( 'full', 1280, 720, false );
 add_filter('twentynineteen_can_show_post_thumbnail', function() {
      return ! is_attachment() && has_post_thumbnail();
 });
+
+remove_filter( 'the_content', 'wpautop' );
+
+add_filter( 'jpeg_quality', function() {
+    return 100;
+} );
