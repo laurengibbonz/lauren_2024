@@ -18,7 +18,7 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android"); ?>
 <h3 class="headline"><strong>Lauren Gibbons Frank</strong> is a designer, teacher, and coder sculpting<br/> data-driven experiences that inspire.</h3>
 </header>
 
-<div id="video" class="section">
+<div id="video" class="section scene">
 <video autoplay loop muted>
   <source src="https://laurengibbons.com/wp-content/uploads/2024/08/GibbonsFrank.mp4" type="video/mp4">
   <source src="https://laurengibbons.com/wp-content/uploads/2024/08/GibbonsFrank.mp4" type="video/ogg">
