@@ -520,7 +520,9 @@ iframe {
     opacity: 0;
     animation-duration: 0.3s;
     transition-timing-function: ease-in;
-    animation-fill-mode: both; }
+    animation-fill-mode: both; 
+    animation-delay: 1s;  
+  }
     .scenes .scene:after {
       content: '';
       clear: both;
@@ -531,6 +533,7 @@ iframe {
       animation-delay: .7s !important;
       -webkit-animation-delay: .7s !important; }
   .scenes .scene--fadein {
+    opacity: 1;
     animation-name: fadeIn; }
   .scenes .scene--fadeinup {
     animation-name: fadeInUp; }
