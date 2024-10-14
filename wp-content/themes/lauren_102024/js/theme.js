@@ -137,3 +137,23 @@ $('.close, .overlay').on('click', function(){
 	console.log('new test');
 	$('.overlay').removeClass('open');
 });
+
+
+let section = document.createElement('section');
+
+function inView (el) {
+  var sb = section.getBoundingClientRect();
+  var eb = el.getBoundingClientRect();
+  return !((eb.top + eb.height < 0) || (eb.top > sb.height));
+}
+
+function updateInView() {
+  for (x of document.querySelectorAll('section')) {
+    if (inView(x)) x.classList.add('scene--fadeinup')
+    // else x.classList.remove('inview');
+  }
+}
+
+section.onscroll = updateInView;
+
+updateInView();

@@ -335,7 +335,7 @@ iframe {
   display: table;
   height: 50vh;
   text-align: left;
-  width: 70% 
+  width: 80% 
 }
 
   #home__header h1 {
@@ -368,7 +368,7 @@ iframe {
   display: block;
   height: auto;
   width: 100%;
-  padding: 3em 0;
+  padding: 3em 0 10em;
 }
 
 #video video {
