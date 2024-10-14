@@ -89,7 +89,7 @@ add_action('wp_enqueue_scripts', 'update_jquery');
 
 //Enqueue Theme Styles & Scripts
 function theme_scripts() {
-	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/style.css', array(), '20240812' );
+	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/style.css', array(), '20240814' );
 	wp_enqueue_script( 'anime', get_template_directory_uri() . '/js/anime.min.js', array( 'jquery' ), '20170605', true );
 	wp_enqueue_script( 'smoothstate', get_template_directory_uri() . '/js/jquery.smoothState.min.js', array( 'jquery' ), '20170605', true );
 	wp_enqueue_script( 'player', get_template_directory_uri() . '/js/player.min.js', array( 'jquery' ), '20170605', true );
