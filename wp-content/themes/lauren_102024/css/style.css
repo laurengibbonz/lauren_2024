@@ -855,6 +855,10 @@ footer {
     transform: none; } }
 
 @media only screen and (max-width: 490px) {
+  .margin {
+    display: block;
+    margin: 10em 0;
+  }
 
   .m-aside {
     width: 100%;

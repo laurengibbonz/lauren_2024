@@ -15,6 +15,5 @@ if ( $query->have_posts() ) :
 	endwhile;
 endif; ?>
 	<?php echo '<h3><a href="'.get_the_permalink(2).'">'.get_the_title(2).'</a></h3>' ?>
-    <h3><a href="mailto:laurengibbonsfrank@gmail.com" target="_blank">Contact</a></h3>
 	</div>
 </div>
